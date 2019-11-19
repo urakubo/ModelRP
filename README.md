@@ -8,7 +8,7 @@ Animals remember temporal links between their actions and subsequent rewards. We
 
 ## System requirements
 
-Matlab 2017b or later plus the toolbox simbiology. We confirmed the safe executions of sample programs on Matlab 2017b and 2018a.
+Matlab 2017b or later plus the toolbox SimBiology. We confirmed the safe executions of sample programs on Matlab 2017b and 2018a.
 
 ## Installation
 
@@ -32,9 +32,9 @@ Matlab 2017b or later plus the toolbox simbiology. We confirmed the safe executi
 </p>
 <BR>
 
-## Nano extension of simbiology
+## Nano extension on SimBiology
 
-We wrote utility functions for the effective implementation of RP signaling model on Simbiology/MatLab. The program [main_examples.m](main_examples.m) was written to explain how to use those functions.
+We wrote utility functions for the effective implementation of RP signaling model on SimBiology/MatLab. The program [main_example.m](main_example.m) was written to explain how to use those functions.
 
 ```addpath
         addpath('./funcs');
