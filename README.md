@@ -24,7 +24,7 @@ Matlab plus the toolbox SimBiology. We confirmed the safe executions of sample p
 </p>
 <BR>
 
-3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for RP and its molecular activities.
+3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the images of the time windows for RP and the related molecular activities.
 
 <BR>
 <p align="center">
