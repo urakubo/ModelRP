@@ -20,11 +20,17 @@ Matlab 2017b or later plus the toolbox simbiology. We confirmed the safe executi
 
 <BR>
 <p align="center">
-  <img src="sample.png" alt="Output of the sample program." width="600">
+  <img src="imgs/sample.png" alt="Output of the sample program" width="600">
 </p>
 <BR>
 
 3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for reinforcement plasticity and its molecular activity.
+
+<BR>
+<p align="center">
+  <img src="imgs/PKA_CaMKII.png" alt="Output of main_fig_timing.m" width="600">
+</p>
+<BR>
 
 ## Nano extension of simbiology
 
