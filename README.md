@@ -12,7 +12,7 @@ Matlab plus the toolbox SimBiology. We confirmed the safe executions of sample p
 
 ## Installation
 
-1. Download the source codes from the github site:
+1. Download source code from the github site:
 
 	- git clone https://github.com/urakubo/ModelRP.git
 
@@ -45,15 +45,15 @@ _species   = {
 		'B'		, 1	;
 		'C'		, 0
 		};
-	init_species = cell2table( _species, 'VariableNames', {'Name','Conc'});
-	init_species.Properties.RowNames = _species(:,1);
+init_species = cell2table( _species, 'VariableNames', {'Name','Conc'});
+init_species.Properties.RowNames = _species(:,1);
 
 _params   = {
 		'kf'			, 0.5;
 		'kb'			, 0.5;
 		};
-	init_params = cell2table( _params, 'VariableNames', {'Name','Param'});
-	init_params.Properties.RowNames = _params(:,1);
+init_params = cell2table( _params, 'VariableNames', {'Name','Param'});
+init_params.Properties.RowNames = _params(:,1);
 
 [model, species, params] = DefineModel(init_species, init_params, Tstop);
 ```
