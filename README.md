@@ -38,7 +38,7 @@ We wrote utility functions for the effective implementation of RP signaling mode
 ```
 addpath('./funcs');
 ``` 
-Then, define the tables of init_species and init_params, and call "[model, species, params] = DefineModel(init_species, init_params, Tstop)" to build a SimBiology model object:
+Then, define the tables of init_species and init_params, and call DefineModel to build a SimBiology model object:
 ```
 _species   = {
 		'A'		, 2	;
