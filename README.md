@@ -35,12 +35,26 @@ Matlab 2017b or later plus the toolbox SimBiology. We confirmed the safe executi
 ## Nano extension on SimBiology
 
 We wrote utility functions for the effective implementation of RP signaling model on SimBiology/MatLab. The program [main_example.m](./main_sample.m) was written to explain how to use those functions.
-
 ```addpath
         addpath('./funcs');
 ```
+Then, specify the tables of init_species and init_params : 
+```
+_species   = {
+		'A'		, 2	;
+		'B'		, 1	;
+		'C'		, 0
+		};
+	init_species = cell2table( _species, 'VariableNames', {'Name','Conc'});
+	init_species.Properties.RowNames = _species(:,1);
 
-
+_params   = {
+		'kf'			, 0.5;
+		'kb'			, 0.5;
+		};
+	init_params = cell2table( _params, 'VariableNames', {'Name','Conc'});
+	init_params.Properties.RowNames = _params(:,1);
+```
 ## License
 
 This project is licensed under the MIT license - see the [LICENSE](LICENSE) file for details.
