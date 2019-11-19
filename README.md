@@ -34,6 +34,12 @@ Matlab 2017b or later plus the toolbox simbiology. We confirmed the safe executi
 
 ## Nano extension of simbiology
 
+We wrote utility functions for the effective implementation of RP signaling model on symbiology/MatLab. The program main_examples.m was written to explain how to use those functions.
+
+```addpath
+        addpath('./funcs');
+```
+
 
 ## License
 
