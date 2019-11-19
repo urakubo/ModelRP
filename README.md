@@ -37,8 +37,8 @@ Matlab 2017b or later plus the toolbox SimBiology. We confirmed the safe executi
 We wrote utility functions for the effective implementation of RP signaling model on SimBiology/MatLab. The program [main_example.m](./main_sample.m) was written to explain how to use those functions. First, the extensions become callable by adding the path to the "./func" directory:
 ```
 addpath('./funcs');
-```
-Then, specify the tables of init_species and init_params : 
+``` 
+Then, define the tables of init_species and init_params, and call "[model, species, params] = DefineModel(init_species, init_params, Tstop)" to build a SimBiology model object:
 ```
 _species   = {
 		'A'		, 2	;
@@ -57,6 +57,16 @@ _params   = {
 
 [model, species, params] = DefineModel(init_species, init_params, Tstop);
 ```
+Then, users can add the reactions by calling the functions Reac11, Reac12, Reac21, ReacChannel, and ReacEnz as follows:
+```
+Reac21('A','B','C',		'kf','kb', model)	; % A + B <-kb kf-> C
+```
+Finally, run the SimBiology simulation function and plot the simulation results:
+```
+sd = sbiosimulate(model);
+```
+The programs for D1/D2 RP ("main_fig_prof.m" and "main_fig_timing.m") call "./models/load_model.m " for the definitions of the D1/D2 signaling model. 
+
 ## License
 
 This project is licensed under the MIT license - see the [LICENSE](LICENSE) file for details.
