@@ -55,6 +55,7 @@ _params   = {
 init_params = cell2table( _params, 'VariableNames', {'Name','Param'});
 init_params.Properties.RowNames = _params(:,1);
 
+Tstop = 10;
 [model, species, params] = DefineModel(init_species, init_params, Tstop);
 ```
 Add reactions by calling the functions, Reac11, Reac12, Reac21, ReacChannel, ReacEnz, etc., as follows:
