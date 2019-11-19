@@ -24,7 +24,7 @@ Matlab 2017b or newer plus the toolbox SimBiology. We confirmed the safe executi
 </p>
 <BR>
 
-3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for reinforcement plasticity and its molecular activity.
+3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for reinforcement plasticity and its molecular activities.
 
 <BR>
 <p align="center">
