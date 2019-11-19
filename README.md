@@ -5,7 +5,22 @@
 
 ## Introduction
 
+
 ## System requirements
+
+
+## Installation
+
+1. Download the source codes from the github site:
+
+	- git clone https://github.com/urakubo/UNI-EM.git
+
+2. Execute main_sample.m, then confirm.
+
+
+
+## Memos
+
 
 ## Reference
 Signaling models for dopamine-dependent temporal contiguity in striatal synaptic plasticity
@@ -15,3 +30,5 @@ Hidetoshi Urakubo, Sho Yagishita, Haruo Kasai, and Shin Ishii
 Correspondence: hurakubo@gmail.com
 
 PLoS Comp. Biol., In revision.
+
+2019/11/20
