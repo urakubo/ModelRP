@@ -8,15 +8,15 @@ Animals remember temporal links between their actions and subsequent rewards. We
 
 ## System requirements
 
-Matlab 2017b or newer plus the toolbox SimBiology. We confirmed the safe executions of sample programs on Matlab 2017b and 2018a.
+Matlab plus the toolbox SimBiology. We confirmed the safe executions of sample programs on Matlab 2017b and 2018a.
 
 ## Installation
 
 1. Download the source codes from the github site:
 
-	- git clone https://github.com/urakubo/UNI-EM.git
+	- git clone https://github.com/urakubo/ModelRP.git
 
-2. Execute main_sample.m, then the following figure will appear.
+2. Execute main_sample.m, then the following image will appear.
 
 <BR>
 <p align="center">
@@ -24,7 +24,7 @@ Matlab 2017b or newer plus the toolbox SimBiology. We confirmed the safe executi
 </p>
 <BR>
 
-3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for reinforcement plasticity and its molecular activities.
+3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for RP and its molecular activities.
 
 <BR>
 <p align="center">
@@ -34,11 +34,11 @@ Matlab 2017b or newer plus the toolbox SimBiology. We confirmed the safe executi
 
 ## Nano extension on SimBiology
 
-We wrote utility functions for the effective implementation of RP signaling model on SimBiology/MatLab. The program [main_example.m](./main_sample.m) was written to explain how to use those functions. First, the extensions become callable by adding the path to the "./func" directory:
+We wrote utility functions for the implementation of RP signaling model on SimBiology/Matlab. The program [main_example.m](./main_sample.m) was written to explain how to use those functions. First, the extensions become callable by adding the path "./func":
 ```
 addpath('./funcs');
 ``` 
-Then, define the tables of init_species and init_params, and call DefineModel to build a SimBiology model object:
+Define the tables "init_species" and "init_params," and call DefineModel to build a SimBiology model object:
 ```
 _species   = {
 		'A'		, 2	;
@@ -57,7 +57,7 @@ _params   = {
 
 [model, species, params] = DefineModel(init_species, init_params, Tstop);
 ```
-Then, users can add reactions by calling the functions, Reac11, Reac12, Reac21, ReacChannel, ReacEnz, etc., as follows:
+Add reactions by calling the functions, Reac11, Reac12, Reac21, ReacChannel, ReacEnz, etc., as follows:
 ```
 Reac21('A','B','C', 'kf','kb', model)	; % A + B <-kb kf-> C
 ```
@@ -65,7 +65,7 @@ Finally, run the SimBiology simulation function and plot the simulation results:
 ```
 sd = sbiosimulate(model);
 ```
-The programs for D1/D2 RP ("main_fig_prof.m" and "main_fig_timing.m") call "./models/load_model.m " for the definitions of the D1/D2 signaling model. 
+The D1/D2 RP signaling models (called from "main_fig_prof.m" and "main_fig_timing.m") are defined in "./models/load_model.m". 
 
 ## License
 
