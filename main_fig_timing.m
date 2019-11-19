@@ -34,7 +34,7 @@
 
 	concs = max_concs(NameMolecule, sd, DA_delay, Tstart, Tend, Toffset_VGCC);
 	plot_concs_timewindow(NameMolecule, DA_delay, concs, YminYmax);
-	title('Max conc of PKA');
+	title('Free-C of PKA (max)');
 	save(sprintf('%s%s.txt', data_dir, NameMolecule), 'concs','-ascii');
 
 
@@ -46,7 +46,7 @@
 	Tend = 20;
 	concs = final_concs(NameMolecule, sd, DA_delay, Tend, Toffset_VGCC);
 	plot_concs_timewindow(NameMolecule, DA_delay, concs, YminYmax);
-	title('End conc of CaMKII');
+	title('Active CaMKII (20 s after stim)');
 	save(sprintf('%s%s.txt', data_dir, NameMolecule), 'concs','-ascii');
 
 
