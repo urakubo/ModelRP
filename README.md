@@ -19,8 +19,12 @@
 
 
 
-## Memos
+## A small environment for simbiology ()
 
+
+## License
+
+This project is licensed under the MIT license - see the [LICENSE](LICENSE) file for details.
 
 ## Reference
 Signaling models for dopamine-dependent temporal contiguity in striatal synaptic plasticity
