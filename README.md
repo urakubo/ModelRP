@@ -8,7 +8,7 @@ Animals remember temporal links between their actions and subsequent rewards. We
 
 ## System requirements
 
-Matlab 2017b or later plus the toolbox simbiology.
+Matlab 2017b or later plus the toolbox simbiology. We confirmed the safe executions of sample programs on Matlab 2017b and 2018a.
 
 ## Installation
 
