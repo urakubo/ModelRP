@@ -20,7 +20,7 @@ Matlab 2017b or later plus the toolbox simbiology.
 
 <BR>
 <p align="center">
-  <img src="sample.png" alt="Output of the sample program." width="400">
+  <img src="untitled.png" alt="Output of the sample program." width="400">
 </p>
 <BR>
 
