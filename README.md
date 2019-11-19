@@ -8,7 +8,7 @@ Animals remember temporal links between their actions and subsequent rewards. We
 
 ## System requirements
 
-Matlab 2017b or later plus the toolbox simbiology.
+Matlab 2017b or later plus the toolbox simbiology. We confirmed the safe executions of sample programs on Matlab 2017b and 2018a.
 
 ## Installation
 
@@ -16,17 +16,17 @@ Matlab 2017b or later plus the toolbox simbiology.
 
 	- git clone https://github.com/urakubo/UNI-EM.git
 
-2. Execute main_sample.m, then confirm the following output.
+2. Execute main_sample.m, then the following figure will appear.
 
 <BR>
 <p align="center">
-  <img src="sample.png" alt="Output of the sample program." width="400">
+  <img src="sample.png" alt="Output of the sample program." width="600">
 </p>
 <BR>
 
-3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the time window for reinforcement plasticity and its molecular activity.
+3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for reinforcement plasticity and its molecular activity.
 
-## A nano extension of simbiology
+## Nano extension of simbiology
 
 
 ## License
@@ -38,8 +38,8 @@ Signaling models for dopamine-dependent temporal contiguity in striatal synaptic
 
 Hidetoshi Urakubo, Sho Yagishita, Haruo Kasai, and Shin Ishii
 
-Correspondence: hurakubo@gmail.com
-
 PLoS Comp. Biol., In revision.
 
 2019/11/20
+
+Correspondence: hurakubo@gmail.com
