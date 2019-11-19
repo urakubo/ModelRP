@@ -52,7 +52,7 @@ _params   = {
 		'kf'			, 0.5;
 		'kb'			, 0.5;
 		};
-	init_params = cell2table( _params, 'VariableNames', {'Name','Conc'});
+	init_params = cell2table( _params, 'VariableNames', {'Name','Param'});
 	init_params.Properties.RowNames = _params(:,1);
 ```
 ## License
