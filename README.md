@@ -57,7 +57,7 @@ _params   = {
 
 [model, species, params] = DefineModel(init_species, init_params, Tstop);
 ```
-Then, users can add the reactions by calling the functions Reac11, Reac12, Reac21, ReacChannel, and ReacEnz as follows:
+Then, users can add the reactions by calling the functions Reac11, Reac12, Reac21, ReacChannel, ReacEnz, etc., as follows:
 ```
 Reac21('A','B','C',		'kf','kb', model)	; % A + B <-kb kf-> C
 ```
