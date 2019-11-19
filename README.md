@@ -54,6 +54,8 @@ _params   = {
 		};
 	init_params = cell2table( _params, 'VariableNames', {'Name','Param'});
 	init_params.Properties.RowNames = _params(:,1);
+
+[model, species, params] = DefineModel(init_species, init_params, Tstop);
 ```
 ## License
 
