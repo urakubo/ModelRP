@@ -64,6 +64,9 @@ Reac21('A','B','C', 'kf','kb', model)	; % A + B <-kb kf-> C
 Finally, run the SimBiology simulation function and plot the simulation results:
 ```
 sd = sbiosimulate(model);
+
+tid = find( strcmp( sd.DataNames, 'C' ) );
+plot( sd.time, sd.Data(:,tid) , '-');
 ```
 The D1/D2 RP signaling models (called from "main_fig_prof.m" and "main_fig_timing.m") are defined in "./models/load_model.m". 
 
