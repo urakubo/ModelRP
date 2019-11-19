@@ -16,7 +16,7 @@ Matlab 2017b or later plus the toolbox simbiology.
 
 	- git clone https://github.com/urakubo/UNI-EM.git
 
-2. Execute main_sample.m, then confirm the following output.
+2. Execute main_sample.m, then the following figure will appear.
 
 <BR>
 <p align="center">
@@ -24,9 +24,9 @@ Matlab 2017b or later plus the toolbox simbiology.
 </p>
 <BR>
 
-3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the time window for reinforcement plasticity and its molecular activity.
+3. Execute main_fig_timing.m and main_fig_prof.m, and confirm the figures of the time window for reinforcement plasticity and its molecular activity.
 
-## A nano extension of simbiology
+## Nano extension of simbiology
 
 
 ## License
