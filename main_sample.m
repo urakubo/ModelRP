@@ -43,7 +43,7 @@ function species = InitSpecies
 		'C'		, 0	;
 		'S'		, 2	;
 		'E'		, 0.1	;
-		'P'		, 0	;
+		'P'		, 0
 		};
 end
 
@@ -73,7 +73,7 @@ function plot_prof(tname, sd, col)
 	for i = 1:numel(tname)
 		tid = find( strcmp( sd.DataNames, tname{i} ) );
 		DATA = sd.Data(:,tid);
-		plot( T, DATA, '-', 'LineWidth', 0.5, 'Color', col{i});
+		plot( T, DATA, '-', 'Color', col{i});
 	end
 
 end
