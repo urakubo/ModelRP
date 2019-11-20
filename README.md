@@ -58,7 +58,7 @@ Add reactions by calling the functions, Reac11, Reac12, Reac21, ReacChannel, Rea
 ```
 Reac21('A','B','C', 'kf','kb', model)	; % A + B <-kb kf-> C
 ```
-Finally, run the SimBiology simulation function and plot the simulation results:
+Finally, run the SimBiology simulation and plot the simulation results:
 ```
 sd = sbiosimulate(model);
 
