@@ -42,17 +42,17 @@ function species = InitSpecies
 		'B'		, 1	;
 		'C'		, 0	;
 		'S'		, 2	;
-		'E'		, 0.1;
-		'P'		, 0 ;
+		'E'		, 0.1	;
+		'P'		, 0	;
 		};
 end
 
 function params = InitParams
 	params  = {
-		'kf'			, 0.5;
-		'kb'			, 0.5;
-		'Km'			, 1;
-		'kcat'			, 10
+		'kf'		, 0.5	;
+		'kb'		, 0.5	;
+		'Km'		, 1	;
+		'kcat'		, 10
 		};
 end
 
