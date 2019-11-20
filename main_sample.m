@@ -57,8 +57,8 @@ function params = InitParams
 end
 
 function InitReacs(model);
-	Reac21('A','B','C',		'kf','kb', model)	; % A + B <-kb kf-> C
-	ReacEnz('S', 'E', 'P',	'Km', 'kcat', model); % S  -(E)-> P
+	Reac21('A','B','C', 'kf','kb', model)	; % A + B <-kb kf-> C
+	ReacEnz('S','E','P', 'Km','kcat', model); % S  -(E)-> P
 end
 
 
