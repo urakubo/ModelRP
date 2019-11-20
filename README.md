@@ -34,11 +34,11 @@ Matlab plus the toolbox SimBiology. We confirmed the safe executions of sample p
 
 ## Nano extension on SimBiology
 
-We wrote utility functions for the implementation of RP signaling model on SimBiology/Matlab. The program [main_example.m](./main_sample.m) was written to explain how to use those functions. First, the extensions become callable by adding the path "./func":
+We wrote utility functions for the implementation of RP signaling model on SimBiology/Matlab. The program [main_example.m](./main_sample.m) was written to explain how to use them. First, the extensions become callable by adding the path "./func":
 ```
 addpath('./funcs');
 ``` 
-Define the tables "init_species" and "init_params," and call DefineModel to build a SimBiology model object:
+Define the cell variables "init_species" and "init_params," and call the function "DefineModel" to build a SimBiology model object:
 ```
 init_species   = {
 		'A'		, 2	;
@@ -47,8 +47,8 @@ init_species   = {
 		};
 
 init_params   = {
-		'kf'			, 0.5;
-		'kb'			, 0.5;
+		'kf'		, 0.5	;
+		'kb'		, 0.5
 		};
 
 Tstop = 10;
