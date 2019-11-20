@@ -53,7 +53,7 @@ function init_species = InitSpecies(SVR, DAbasal, SVRspine);
 	fprintf('Init PDE conc: %g uM \n', InitPDE	);
 
 
-	spec   = {
+	init_species   = {
 		'AllGolf'		, 0				;
 		'AllGi'			, 0				;
 %
@@ -186,7 +186,5 @@ function init_species = InitSpecies(SVR, DAbasal, SVRspine);
 		'ActiveRatio'		, 0			;
 		'ActivationFactor'	, 0			;
 		};
-	init_species = cell2table( spec, 'VariableNames', {'Name','Conc'});
-	init_species.Properties.RowNames = spec(:,1);
 
 

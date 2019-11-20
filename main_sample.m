@@ -37,7 +37,7 @@
 %%%
 
 function species = InitSpecies
-	spec   = {
+	species   = {
 		'A'		, 2	;
 		'B'		, 1	;
 		'C'		, 0	;
@@ -45,19 +45,15 @@ function species = InitSpecies
 		'E'		, 0.1;
 		'P'		, 0 ;
 		};
-	species = cell2table( spec, 'VariableNames', {'Name','Conc'});
-	species.Properties.RowNames = spec(:,1);
 end
 
 function params = InitParams
-	spec  = {
+	params  = {
 		'kf'			, 0.5;
 		'kb'			, 0.5;
 		'Km'			, 1;
 		'kcat'			, 10
 		};
-	params = cell2table( spec, 'VariableNames', {'Name','Param'});
-	params.Properties.RowNames = spec(:,1);
 end
 
 function InitReacs(model);

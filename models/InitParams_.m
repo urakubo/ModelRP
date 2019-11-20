@@ -172,10 +172,13 @@ function init_params = InitParams(SVRtarg, SVRspine);
 		'kon_Epac_cAMP'		, 0.022; %
 		'koff_Epac_cAMP'	, 10.0
 		};
-
 %%
 %%
-	spec_res  = {
+	init_params = cell2table( spec, 'VariableNames', {'Name','Param'});
+	init_params.Properties.RowNames = spec(:,1);
+%%
+%%
+	spec2  = {
 	%
 		'kon_T_C'	;
 		'koff_T_C'	;
@@ -196,40 +199,50 @@ function init_params = InitParams(SVRtarg, SVRspine);
 	};
 %%
 %%
-	spec2 = cell(numel(spec_res),2);
-	for i = 1:numel(spec_res);
-		spec2{i,1} = sprintf('_2%s', spec_res{i});
-		id = find(strcmp(spec_res{i}, spec(:,1)));
-		spec2{i,2} = 2 * spec{id,2};
+	spec2_rev = cell(numel(spec2),2);
+	for i = 1:numel(spec2);
+		spec2_rev{i,1} = sprintf('_2%s', spec2{i});
+		spec2_rev{i,2} = 2 * init_params{ spec2{i} , 'Param'};
 	end;
+	init_params2 = cell2table( spec2_rev, 'VariableNames', {'Name','Param'} );
+	init_params2.Properties.RowNames = spec2_rev(:,1);
+	init_params = vertcat(init_params, init_params2);
 %%
 %%
-	spec_res  = {
+	spec2  = {
 		'kon_A'		;
 		'koff_A'
 	};
-
-	spec4 = cell(numel(spec_res),2);
-	for i = 1:numel(spec_res);
-		spec4{i,1} = sprintf('_4%s', spec_res{i});
-		id = find(strcmp(spec_res{i}, spec(:,1)));
-		spec4{i,2} = 4 * spec{id,2};
-	end;
-
-	spec10 = cell(numel(spec_res),2);
-	for i = 1:numel(spec_res);
-		spec10{i,1} = sprintf('_10%s', spec_res{i});
-		id = find(strcmp(spec_res{i}, spec(:,1)));
-		spec10{i,2} = 10 * spec{id,2};
-	end;
-
-	spec16 = cell(numel(spec_res),2);
-	for i = 1:numel(spec_res);
-		spec16{i,1} = sprintf('_16%s', spec_res{i});
-		id = find(strcmp(spec_res{i}, spec(:,1)));
-		spec16{i,2} = 16 * spec{id,2};
-	end;
-
-	init_params = [spec;spec2;spec4;spec10;spec16];
 %%
 %%
+	spec4_rev = cell(numel(spec2),2);
+	for i = 1:numel(spec2);
+		spec4_rev{i,1} = sprintf('_4%s', spec2{i});
+		spec4_rev{i,2} = 4 * init_params{ spec2{i} , 'Param'};
+	end;
+	init_params4 = cell2table( spec4_rev, 'VariableNames', {'Name','Param'} );
+	init_params4.Properties.RowNames = spec4_rev(:,1);
+	init_params = vertcat(init_params, init_params4);
+%%
+%%
+	spec10_rev = cell(numel(spec2),2);
+	for i = 1:numel(spec2);
+		spec10_rev{i,1} = sprintf('_10%s', spec2{i});
+		spec10_rev{i,2} = 10 * init_params{ spec2{i} , 'Param'};
+	end;
+	init_params10 = cell2table( spec10_rev, 'VariableNames', {'Name','Param'} );
+	init_params10.Properties.RowNames = spec10_rev(:,1);
+	init_params = vertcat(init_params, init_params10);
+%%
+%%
+	spec16_rev = cell(numel(spec2),2);
+	for i = 1:numel(spec2);
+		spec16_rev{i,1} = sprintf('_16%s', spec2{i});
+		spec16_rev{i,2} = 16 * init_params{ spec2{i} , 'Param'};
+	end;
+	init_params16 = cell2table( spec16_rev, 'VariableNames', {'Name','Param'} );
+	init_params16.Properties.RowNames = spec16_rev(:,1);
+	init_params = vertcat(init_params, init_params16);
+
+
+
