@@ -81,7 +81,7 @@ end
 function plot_profs_prep(XLIM, YLIM)
 
 	xlabel('Time (s)');
-	ylabel('(uM)');
+	ylabel('Concentration (uM)');
 	xlim(XLIM);
 	ylim(YLIM);
 	axis square;
