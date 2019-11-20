@@ -47,8 +47,8 @@ init_species   = {
 		};
 
 init_params   = {
-		'kf'			, 0.5;
-		'kb'			, 0.5
+		'kf'		, 0.5	;
+		'kb'		, 0.5
 		};
 
 Tstop = 10;
