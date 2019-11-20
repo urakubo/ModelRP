@@ -38,7 +38,7 @@ We wrote utility functions for the implementation of RP signaling model on SimBi
 ```
 addpath('./funcs');
 ``` 
-Define the tables "init_species" and "init_params," and call DefineModel to build a SimBiology model object:
+Define the cell variables "init_species" and "init_params," and call the function "DefineModel" to build a SimBiology model object:
 ```
 init_species   = {
 		'A'		, 2	;
