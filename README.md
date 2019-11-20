@@ -40,20 +40,16 @@ addpath('./funcs');
 ``` 
 Define the tables "init_species" and "init_params," and call DefineModel to build a SimBiology model object:
 ```
-_species   = {
+init_species   = {
 		'A'		, 2	;
 		'B'		, 1	;
 		'C'		, 0
 		};
-init_species = cell2table( _species, 'VariableNames', {'Name','Conc'});
-init_species.Properties.RowNames = _species(:,1);
 
-_params   = {
+init_params   = {
 		'kf'			, 0.5;
 		'kb'			, 0.5;
 		};
-init_params = cell2table( _params, 'VariableNames', {'Name','Param'});
-init_params.Properties.RowNames = _params(:,1);
 
 Tstop = 10;
 [model, species, params] = DefineModel(init_species, init_params, Tstop);
