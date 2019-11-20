@@ -34,7 +34,7 @@ Matlab plus the toolbox SimBiology. We confirmed the safe executions of sample p
 
 ## Nano extension on SimBiology
 
-We wrote utility functions for the implementation of RP signaling model on SimBiology/Matlab. The program [main_example.m](./main_sample.m) was written to explain how to use them. First, the extensions become callable by adding the path "./func":
+We wrote utility functions for the implementation of RP signaling model on SimBiology/Matlab. The program [main_example.m](./main_sample.m) demonstrates how to use them. First, the extensions become callable by adding the path "./func":
 ```
 addpath('./funcs');
 ``` 
