@@ -76,8 +76,9 @@ Signaling models for dopamine-dependent temporal contiguity in striatal synaptic
 
 Hidetoshi Urakubo, Sho Yagishita, Haruo Kasai, and Shin Ishii
 
-PLoS Comp. Biol., In revision.
+PLoS Comp. Biol., 16(7): e1008078.
+https://doi.org/10.1371/journal.pcbi.1008078
 
-2019/11/20
+2020/8/5
 
 Correspondence: hurakubo@gmail.com
